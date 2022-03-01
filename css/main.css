@@ -1,0 +1,69 @@
+/*
+reset css
+*/
+@import url('https://fonts.googleapis.com/css2? family=Poppins:ital,wght@1,500&display=swap');
+html{
+    font-size: 62.5%; /* 16px *62.5%= 1.000 */
+}
+body{
+    font: 1.6rem 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom,#b91d47 0%,#fff 100%)no-repeat scroll center;
+}
+h1,h2,h3,h4,h5,h6,p,ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+*{
+    box-sizing: border-box;
+}    
+/*
+theme
+*/
+:root{
+    --bgcolor-primary: #2d89ef;
+    --bgcolor-secondary: #b91d47;
+    --bgcolor-all:#9f00a7;
+    --bgcolor-text:#2b5797;
+
+}
+header h1,section h2{
+    max-width: 90rem;
+    margin: 5rem auto;
+}
+header h1::before{
+    content: url();
+    vertical-align: -1rem;
+    margin-right: .3rem;
+    filter: invert(100);
+}
+main section{
+    max-width: 120rem;
+    margin: 5rem auto;
+    background-color: var(--bgcolor-text);
+}
+section ul{
+    font-size: 0;
+    padding: 1rem 0 0 1rem;
+
+}
+section ul li{
+    width: calc(100%/ 4);
+    display: inline-block;
+    margin: 0 1 rem 1rem 0;
+}
+section ul li:nth-of-type(5),section ul li:nth-of-type(6){
+    width: calc(100%/2 -.1rem);
+
+}
+section ul li:nth-of-type(7){
+    width: calc(100%/2 -.1rem);
+}
